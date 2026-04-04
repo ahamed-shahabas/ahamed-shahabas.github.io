@@ -46,3 +46,7 @@ particlesJS("particles-js", {
     line_linked: { enable: true }
   }
 });
+
+function toggleTheme() {
+  document.body.classList.toggle("light-mode");
+}
