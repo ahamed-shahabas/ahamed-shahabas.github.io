@@ -103,3 +103,25 @@ section {
   opacity: 1;
   transform: translateY(0);
 }
+.theme-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.light-mode {
+  background: #ffffff;
+  color: #000000;
+}
+
+.light-mode .navbar,
+.light-mode .card,
+.light-mode .bar {
+  background: #f0f0f0;
+}
+
+.light-mode a {
+  color: #0077cc;
+}
