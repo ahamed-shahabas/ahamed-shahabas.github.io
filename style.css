@@ -1,51 +1,105 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
+  font-family: Arial;
   background: #0d1117;
   color: #c9d1d9;
+  scroll-behavior: smooth;
 }
 
-header {
-  text-align: center;
-  padding: 40px;
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
   background: #161b22;
+  z-index: 1000;
 }
 
-h1 {
-  color: #58a6ff;
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
-section {
-  padding: 30px;
-  max-width: 900px;
-  margin: auto;
-}
-
-h2 {
-  color: #58a6ff;
-  border-bottom: 1px solid #30363d;
-  padding-bottom: 10px;
-}
-
-ul {
-  line-height: 1.8;
-}
-
-a {
+.navbar a {
   color: #58a6ff;
   text-decoration: none;
 }
 
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.profile-img {
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid #58a6ff;
+}
+
+h1 { color: #58a6ff; }
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+}
+
+/* Skills */
+.skills span {
+  background: #161b22;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+/* Cards */
+.card {
+  background: #161b22;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Button */
 .btn {
-  background: #238636;
+  display: inline-block;
+  margin-top: 10px;
   padding: 10px 20px;
+  background: #238636;
   color: white;
   border-radius: 5px;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #161b22;
-  margin-top: 20px;
+/* WhatsApp */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+/* Fade animation */
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
 }
